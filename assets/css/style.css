@@ -1,0 +1,91 @@
+/*palette: https://flatuicolors.com/palette/us*/
+/*Red: #d63031*/
+/*gold: #fdcb6e*/
+/*light blue grey: #b2bec3*/
+/*light mint: #00b894*/
+/*dark grey: #2d3436*/
+
+
+
+/*===============page setup===============*/
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+/*===============end page setup===============*/
+
+/*===============nav===============*/
+nav {
+	position: fixed;
+	width: 150px;
+	background-color: gold;
+	left: 50px;
+	top: 50px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 10px;
+	/*this isn't working*/
+	z-index: 250;
+}
+
+.headshot {
+	width: 130px;
+	height: 130px;
+}
+/*===============end nav===============*/
+
+/*===============main content===============*/
+
+.summaryDiv, .worksDiv, .aboutMeDiv, .contactDiv {
+	height: 50%;
+	text-align: center;
+	/*this isn't working*/
+	z-index: 500;
+}
+
+.summaryTitle {
+	background-image: url("../images/space.jpg");
+}
+
+.worksTitle {
+	background-image: url("../images/cloud.jpg");
+}
+
+.aboutMeTitle {
+	background-image: url("../images/austin.jpg");
+}
+
+.contactTitle {
+	background-image: url("../images/china.jpg");
+}
+
+.summaryTitle, .worksTitle, .aboutMeTitle, .contactTitle {
+	height: 50%;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.summaryDiv {
+	background-color: #2d3436;
+}
+
+.worksDiv {
+	background-color: #b2bec3;
+}
+
+.aboutMeDiv {
+	background-color: #00b894;
+}
+
+.contactDiv {
+	background-color: #d63031;
+}
+/*===============end main content===============*/
