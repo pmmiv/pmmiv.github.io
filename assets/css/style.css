@@ -14,22 +14,53 @@
 
 html, body {
 	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 17px;
+    color: white;
 }
+
+/*page title*/
+h1 {
+	font-size: 3.5em;
+	font-weight: 700;
+	margin: 0px;
+}
+
+/*section titles*/
+h2 {
+	font-size: 2em;
+}
+
+/*sectionSubtitles*/
+h3 {
+	font-size: 1.7em;
+	text-decoration: underline;
+	margin-bottom: 20px;
+}
+
+h4 {
+	font-size: 1.3em;
+	margin: 0;
+}
+
+
+
 /*===============end page setup===============*/
 
 /*===============nav===============*/
 nav {
 	position: fixed;
 	width: 150px;
-	background-color: gold;
+	background-color: #fdcb6e;
 	left: 50px;
 	top: 50px;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	padding: 10px;
-	/*this isn't working*/
 	z-index: 250;
+	text-align: center;
+	box-shadow: 3px 2px 8px #555;
 }
 
 .headshot {
@@ -40,11 +71,39 @@ nav {
 
 /*===============main content===============*/
 
-.summaryDiv, .worksDiv, .aboutMeDiv, .contactDiv {
-	height: 50%;
-	text-align: center;
-	/*this isn't working*/
+#summaryDiv, #worksDiv, #aboutMeDiv, #contactDiv {
+	position: relative;
+	height: 75%;
 	z-index: 500;
+	display: flex;
+	justify-content: space-around;
+}
+
+#summaryDiv {
+	background-color: #2d3436;
+}
+
+#worksDiv {
+	background-color: #b2bec3;
+}
+
+#aboutMeDiv {
+	background-color: #00b894;
+}
+
+#contactDiv {
+	background-color: #d63031;
+}
+
+.subLeft {
+	border-right: 1px white solid;
+	flex: 1;
+	padding: 50px;
+}
+
+.subRight {
+	flex: 1;
+	padding: 50px;
 }
 
 .summaryTitle {
@@ -60,32 +119,40 @@ nav {
 }
 
 .contactTitle {
+	background-image: url("../images/ocean.jpg");
+}
+
+.tooFar {
 	background-image: url("../images/china.jpg");
 }
 
-.summaryTitle, .worksTitle, .aboutMeTitle, .contactTitle {
-	height: 50%;
+.summaryTitle, .worksTitle, .aboutMeTitle, .contactTitle, .tooFar {
+	height: 100%;
 	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
-    color: white;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
-.summaryDiv {
-	background-color: #2d3436;
-}
-
-.worksDiv {
-	background-color: #b2bec3;
-}
-
-.aboutMeDiv {
-	background-color: #00b894;
-}
-
-.contactDiv {
-	background-color: #d63031;
-}
 /*===============end main content===============*/
+
+/*===============other===============*/
+.nameRule {
+	width: 300px;
+	margin: 30px;
+}
+
+break {
+	display: inline-block;
+	flex-basis: 100%;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+/*===============end other===============*/
+
