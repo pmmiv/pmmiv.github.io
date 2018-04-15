@@ -1,8 +1,7 @@
 var onScrollHandler = function() {
   // var newImageUrl = yourImageElement.src;
   var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  if (scrollTop > 50) {
-    console.log("fired");
+  if (scrollTop > 15) {
     $("#readOn").hide();
      // newImageUrl = "img1.jpg"
   }
@@ -17,7 +16,8 @@ var onScrollHandler = function() {
 
 
 $( document ).ready(function() {
-  console.log("ready")
+    console.log( "ready!" );
 
 	window.addEventListener ("scroll", onScrollHandler);
+
 });
