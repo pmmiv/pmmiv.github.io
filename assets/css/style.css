@@ -17,6 +17,7 @@ html, body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 17px;
     color: white;
+	scroll-behavior: smooth;
 }
 
 /*page title*/
@@ -41,6 +42,21 @@ h3 {
 h4 {
 	font-size: 1.3em;
 	margin: 0;
+}
+
+footer {
+	color: rgba(255,255,255,.6);
+	position: fixed;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 10px;
+	right: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	/*z-index: 750;*/
 }
 
 
@@ -107,7 +123,7 @@ nav {
 }
 
 .summaryTitle {
-	background-image: url("../images/space.jpg");
+	background-image: url("../images/space.jpg");  
 }
 
 .worksTitle {
@@ -121,15 +137,16 @@ nav {
 .contactTitle {
 	background-image: url("../images/ocean.jpg");
 }
-
 .tooFar {
 	background-image: url("../images/china.jpg");
+    background-position: center;
 }
 
 .summaryTitle, .worksTitle, .aboutMeTitle, .contactTitle, .tooFar {
-	height: 100%;
+	transform: translateZ(-1px) scale(1.03);
+	height: 100vh;
 	background-attachment: fixed;
-    background-position: center;
+    background-position: 0 -50px;
     background-repeat: no-repeat;
     background-size: cover;
 	display: flex;
