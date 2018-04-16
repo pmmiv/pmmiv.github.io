@@ -12,6 +12,9 @@
 	<!-- dev styles -->
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/mobile.css">
+	<!-- slick -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/slick/slick-theme.css"/>
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
@@ -58,7 +61,22 @@
 			<h2>Works</h2>
 		</section>
 	<!-- works div -->
-		<section id="worksDiv"></section>
+		<section id="worksDiv">
+			<div class="workSlider">
+				<div>your content</div>
+				<div>your content</div>
+				<div>your content</div>
+				<div>your content</div>
+				<div>your content</div>
+				<div>your content</div>
+				<div>your content</div>
+				<div>your content</div>
+				<div>your content</div>
+				<div>your content</div>
+				<div>your content</div>
+				<div>your content</div>
+			</div>	
+		</section>
 	<!-- about me title -->
 		<section class="aboutMeTitle">
 			<h2>About Me</h2>
@@ -70,13 +88,41 @@
 			<h2>Contact</h2>
 		</section>
 	<!-- contact div -->
-		<section id="contactDiv"></section>
+		<section id="contactDiv">
+			<div class="subLeft">	
+				<h3>Contact</h3>
+				<ul>
+					<li><a target="_blank" href="https://github.com/pmmiv">Github</a></li>
+					<li><a target="_blank" href="https://linkedin.com/in/pmmilamiv">Linkedin</a></li>
+					<li><a target="_blank" href="mailto:pmmilamiv@gmail.com">Email</a></li>
+				</ul>
+			</div>
+			<div class="subRight">
+				<form>
+					<input type="text" name="input" placeholder="Full Name">
+					<br>
+					<input type="text" name="subject" placeholder="Subject" required="required">
+					<br>
+					<input type="text" name="subject" placeholder="Company (optional)">
+					<br>
+					<input type="text" name="subject" placeholder="Title">
+					<br>
+
+					<textarea rows="4" cols="50" placeholder="Here's where your message goes, Silly.."></textarea>
+					<input type="submit">
+				</form>
+			</div>
+		</section>
+		</section>
 	<!-- too far -->
 		<section class="tooFar">
 			<h2>Whoops! We've gone a little further than we planned..</h2>
 			<a href="#">return to top</a>
 		</section>
 
+	<!-- slick -->
+	<script type="text/javascript" src="assets/css/slick/slick.js"></script>
+	<!-- dev js -->
 	<script type="text/javascript" src="./assets/javascript/app.js"></script>
 </body>
 </html>
