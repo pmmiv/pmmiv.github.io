@@ -7,118 +7,81 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<!-- google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 	<!-- font awesome -->
 	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 	<!-- dev styles -->
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/mobile.css">
-	<!-- slick -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/slick/slick-theme.css"/>
 </head>
 <body>
-	<!-- nav card -->
-		<nav>
-			<img class="headshot" src="./assets/images/HS.png" alt="#">
-			<!-- make this a drop down on hover -->
-			<ul>
-				<li><a href="#summaryDiv">Summary</a></li>
-				<li><a href="#worksDiv">Works</a></li>
-				<li><a href="#aboutMeDiv">Biography</a></li>
-				<li><a href="#contactDiv">Contact</a></li>
-			</ul>
-		</nav>
-
-		<footer id="readOn">
-			<span>Read on</span>
-			<break></break>
-			<span><i class="fas fa-chevron-down"></i></span>
-		</footer>
-
-	<!-- summary title -->
-		<section class="summaryTitle">
-			<h1>PMMIV</h1>
-			<hr class="nameRule">
-			<h4>Prentice Martin Milam IV</h4>
-		</section>
-	<!-- summary div -->
-		<section id="summaryDiv">
-			<div class="subLeft">	
-				<h3>Introduction</h3>
-				<p>Hello. It's good to meet you, and thank you for visiting my portfolio site.</p>
-				<br>
-				<p> Who am I? Oh, nobody; just another front-end developer with a drive to create memorable web experiences.. Oh you're <span class="needChange">in need of one?</span> Great! Tell you more about myself..</p>
-				<!-- multiple choice message on hover -->
-				<br>
-				<p>First of all, reasoning comes naturally to me. When it comes to learning new technologies, I am able to quickly assess the basics, understand the purpose, and infer the possibilities of the tech. </p>
-				<br>
-				<p>Secondly, I love design, and I've got a real knack for it. I went to film school, so I have an opinion on just about everything mise en scene. Luckily, I also worked in media production for years, so I know when to keep my mouth quiet about and fall in line. I can plan or build sensible UI/UX without much to go on.</p>
+	<section class="cover">
+		<img class="headshot" src="./assets/images/HS.png" alt="#">
+		<div>
+			<h1>PM Milam IV</h1>
+			<span>Front-End Development</span><br>
+			<span>Web Design</span><br>
+			<span>Media Production</span><br>
+		</div>
+	</section>
+	<section class="mainContent">
+		<ul class="nav">
+			<li class="brand">
+				<h2>PMMIV</h2>
+			</li>
+			<li class="navItem">
+				<button>Bio</button>
+			</li>
+			<li class="navItem">
+				<button>Work</button>
+			</li>
+			<li class="navItem">
+				<button>Contact</button>
+			</li>
+		</ul>
+		<section class="bioPage">
+			<div class="disciplinesDiv">
+				<div class="disciplineCard">
+					<i class="fas fa-code"></i>
+					<h6>Development</h6>
+					<div class="blurb"><p>When the goal is complex functionality, reason and passion prevent bugs. I take the extra steps to keep my code well organized and readable.</p></div>
+				</div>
+				<div class="disciplineCard">
+					<i class="far fa-lightbulb"></i>
+					<h6>Design</h6>
+					<div class="blurb"><p>A unique and logical design yields a memorable UX. I make calculated choices to make my projects pop, and not explode.</p></div>
+				</div>
+				<div class="disciplineCard">
+					<i class="fas fa-camera"></i>
+					<h6>Production</h6>
+					<div class="blurb"><p>My media production background makes asset creation a breeze. If I need something I don't have, I can make it. This helps me realize specific visions.</p></div>
+				</div>
 			</div>
-			<div class="subRight">A dumb image or something.. Maybe it animates. Who knows?</div>
-		</section>
-	<!-- works title -->
-		<section class="worksTitle">
-			<h2>Works</h2>
-		</section>
-	<!-- works div -->
-		<section id="worksDiv">
-			<div class="workSlider">
-				<img src="https://cdn.movieweb.com/img.news.tops/NE6rpie8LGl596_1_b/Lord-Of-Rings-Amazon-Series-New-Stories-Prequel.jpg" alt="#">
-				<img src="http://www.slashfilm.com/wp/wp-content/images/lord-of-the-rings-tv-show.jpg" alt="#">
-				<img src="https://images-na.ssl-images-amazon.com/images/M/MV5BODk1MzkwNTA4N15BMl5BanBnXkFtZTgwOTU1ODY3MjI@._V1_CR0,60,640,360_AL_UX477_CR0,0,477,268_AL_.jpg" alt="#">
-				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3b8vLmC62oOJkjQYjp3VzBVOWPBzfbL0dvTPzLuoY2KRb0Lqy-w" alt="#">
-				<img src="https://i.ytimg.com/vi/ZzswSMW1Ugc/maxresdefault.jpg" alt="#">
-			</div>	
-		</section>
-	<!-- about me title -->
-		<section class="aboutMeTitle">
-			<h2>Biography</h2>
-		</section>
-	<!-- about me div -->
-		<section id="aboutMeDiv">
+			<div class="lr">
+				
+			</div>
 			
 		</section>
-	<!-- contact title -->
-		<section class="contactTitle">
-			<h2>Contact</h2>
+		<section class="workPage">
+			
 		</section>
-	<!-- contact div -->
-		<section id="contactDiv">
-			<div class="subLeft">	
-				<h3>Contact</h3>
-				<ul>
-					<li><a target="_blank" href="https://github.com/pmmiv">Github</a></li>
-					<li><a target="_blank" href="https://linkedin.com/in/pmmilamiv">Linkedin</a></li>
-					<li><a target="_blank" href="mailto:pmmilamiv@gmail.com">Email</a></li>
-				</ul>
-			</div>
-			<div class="subRight">
-				<form>
-					<input type="text" name="input" placeholder="Full Name">
-					<br>
-					<input type="text" name="subject" placeholder="Subject" required="required">
-					<br>
-					<input type="text" name="subject" placeholder="Company (optional)">
-					<br>
-					<input type="text" name="subject" placeholder="Title">
-					<br>
-
-					<textarea rows="4" cols="50" placeholder="Here's where your message goes, Silly.."></textarea>
-					<input type="submit">
-				</form>
-			</div>
-		</section>
-		</section>
-	<!-- too far -->
-		<section class="tooFar">
-			<h2>Whoops! We've gone a little further than we planned..</h2>
-			<a href="#">return to top</a>
+		<section class="contactPage">
+			
 		</section>
 
+
+	</section>
+
+<!-- 			<ul>
+			<li><a href="#summaryDiv">Summary</a></li>
+			<li><a href="#worksDiv">Works</a></li>
+			<li><a href="#aboutMeDiv">Biography</a></li>
+			<li><a href="#contactDiv">Contact</a></li>
+		</ul> -->
+	<button class="enterSite"><span>Enter</span></button>
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<!-- slick -->
-	<script type="text/javascript" src="assets/css/slick/slick.js"></script>
 	<!-- dev js -->
 	<script type="text/javascript" src="./assets/javascript/app.js"></script>
 </body>
