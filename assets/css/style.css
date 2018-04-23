@@ -58,6 +58,7 @@ h6 {
 
 a {
 	/*text-decoration: none;*/
+	color: #fe9;
 	cursor: pointer;
 }
 
@@ -142,8 +143,8 @@ nav {
 
 nav a {
 	color: white;
-	height: 100%;
 	line-height: 50px;
+	text-decoration: none;
 }
 
 .navleft, .navright {
@@ -185,32 +186,41 @@ nav .svg-inline--fa {
 /*===============main content===============*/
 .mainContent {
 	display: flex;
-	justify-content: center;
-	/*overflow-x: scroll;*/
+	justify-content: flex-start;
 	height: 100vh;
 	width: 100vw;
 }
 
-.bioPage, .workPage, .contactPage {
+.page {
 	margin-top: 50px;
 	width: 100vw;
 }
 
-.disciplinesDiv, .lr {
+.rl, .lr {
 	padding: 20px 10%;
 	width: 100vw;
-    box-shadow: 
+/*    box-shadow: 
 	    inset 0px 11px 150px 0 rgba(0,0,0,.2),
-	    inset 0px -11px 150px 0 rgba(0,0,0,.2);
-	/*box-shadow: inset 0 0 150px 0 rgba(0,0,0,.2);*/
+	    inset 0px -11px 150px 0 rgba(0,0,0,.2);*/
 	height: 50%;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	list-style-type: square;
 }
 
-.disciplinesDiv {
+.disciplinesDiv, .workTop, .workBottom {
+	justify-content: space-around;
+	align-items: center;
+}
+
+.aboutDiv {
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.lr {
+	background: linear-gradient(to left, rgba(0,0,0,.3), transparent);
+}
+.rl {
 	background: linear-gradient(to right, rgba(0,0,0,.3), transparent);
 }
  
@@ -235,11 +245,6 @@ nav .svg-inline--fa {
 	text-align: left;
 	line-height: 1.3em;
 	height: 100%;
-}
-
-.lr {
-	/*margin-top: 20px;*/
-	background: linear-gradient(to left, rgba(0,0,0,.3), transparent);
 }
 /*===============end main content===============*/
 
