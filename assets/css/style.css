@@ -62,6 +62,10 @@ a {
 	cursor: pointer;
 }
 
+strong {
+	font-weight: 800; 
+}
+
 button {
 	cursor: pointer;
 	color: white;
@@ -203,23 +207,51 @@ nav .svg-inline--fa {
 	    inset 0px 11px 150px 0 rgba(0,0,0,.2),
 	    inset 0px -11px 150px 0 rgba(0,0,0,.2);*/
 	height: 50%;
-	display: flex;
 }
 
-.disciplinesDiv, .workTop, .workBottom {
+.disciplinesDiv, .worksDiv {
+	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
 
 .aboutDiv {
+	display: flex;
 	align-items: center;
 	padding: 0 15%;
 }
 
-.summary {
-	padding-left: 50px;
+.contactDiv {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 }
 
+.contactTitle {
+	max-width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.contactTitle h3 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.contactList {
+	display: flex;
+	justify-content: space-around;
+}
+
+.contactList li {
+	padding: 0 10px;
+}
+
+.summary {
+	padding-left: 50px;
+	line-height: 1.2;
+}
 
 .lr {
 	background: linear-gradient(to left, rgba(0,0,0,.3), transparent);
@@ -228,7 +260,7 @@ nav .svg-inline--fa {
 	background: linear-gradient(to right, rgba(0,0,0,.3), transparent);
 }
  
-.disciplineCard {
+.disciplineCard, .workCard {
 	padding: 20px 0;
 	width: 20%;
 	height: 100%;
@@ -237,9 +269,11 @@ nav .svg-inline--fa {
 	align-items: center;
 }
 
-.disciplineCard li {
-	margin-left: 15px;
+.workCard li {
+	margin-top: 5px;
+	line-height: 1.2;
 	list-style-type: square;
+	list-style-position: inside;
 }
 
 .svg-inline--fa {
@@ -247,13 +281,20 @@ nav .svg-inline--fa {
 	margin-bottom: 15px; 
 }
 
+nav .svg-inline--fa{
+	font-size: 1.5em;
+}
+
 .blurb {
 	background: linear-gradient(to bottom, rgba(0,0,0,.12), transparent);
 	padding: 15px;
 	margin-top: 10px;
 	text-align: left;
-	line-height: 1.3em;
 	height: 100%;
+}
+
+.blurb p {
+	line-height: 1.5;
 }
 /*===============end main content===============*/
 
