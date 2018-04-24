@@ -212,8 +212,12 @@ nav .svg-inline--fa {
 }
 
 .aboutDiv {
-	flex-direction: column;
 	align-items: center;
+	padding: 0 15%;
+}
+
+.summary {
+	padding-left: 50px;
 }
 
 
@@ -231,6 +235,11 @@ nav .svg-inline--fa {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.disciplineCard li {
+	margin-left: 15px;
+	list-style-type: square;
 }
 
 .svg-inline--fa {
