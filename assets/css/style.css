@@ -219,13 +219,6 @@ nav .svg-inline--fa {
 	height: 50%;
 }
 
-.lr {
-    /*box-shadow: inset 0px 50px 150px 0 rgba(0,0,0,.2);*/
-}
-.rl {
-	/*box-shadow: inset 0px 50px 150px 0 rgba(0,0,0,.2);*/
-}
-
 .disciplinesDiv, .worksDiv {
 	display: flex;
 	justify-content: space-around;
@@ -235,7 +228,8 @@ nav .svg-inline--fa {
 .aboutDiv {
 	display: flex;
 	align-items: flex-start;
-	padding: 50px 15% 0 15%;
+	justify-content: center;
+	padding: 50px 7% 0 7%;
 }
 
 .contactDiv {
@@ -261,7 +255,7 @@ nav .svg-inline--fa {
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-    padding: 20px;
+    padding: 25px;
     width: 80%;
     max-width: 1200px;
     height: 85%;
@@ -321,6 +315,7 @@ nav .svg-inline--fa {
 	font-size: 1.1em;
 	overflow-y: scroll;
 	max-height: 300px;
+	min-width: 967px;
 	max-width: 1100px;
 	text-indent: 2em;
 }
@@ -377,7 +372,7 @@ nav .svg-inline--fa{
 .birds, .clouds, .mountains, .trees, .cloudsright, .mountainsleft {
 	background-repeat: no-repeat;
 	overflow-x: visible;
-	background-color: rgba(255,255,255,.4);
+	background-color: rgba(255,255,255,.3);
 }
 
 .birds {
@@ -414,7 +409,7 @@ nav .svg-inline--fa{
 }
 
 .trees {
-	background-position: -3%;
+	background-position: -3% 450%;
 	background-size: 24%;
 	background-image: url("../images/trees.svg");
 }
