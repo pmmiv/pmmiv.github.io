@@ -98,6 +98,7 @@ break {
 	list-style-type: square;
 	font-size: 1.5em;
 	z-index: 500;
+	user-select: none;
 }
 
 .headshot {
@@ -125,6 +126,7 @@ break {
 	border: none; 
 	z-index: 501;
 	font-size: 1.2em;
+	outline: none;
 }
 
 .enterSite:hover {
@@ -408,12 +410,12 @@ nav .svg-inline--fa{
 
 .mountainsleft {
 	background-image: url("../images/mountains.svg");
-	background-position: -50% 200%;
+	background-position: -50% 0%;
 }
 
 .trees {
-	background-position: -10% 200%;
-	background-size: 22%;
+	background-position: -3%;
+	background-size: 24%;
 	background-image: url("../images/trees.svg");
 }
 /*===============end main content===============*/

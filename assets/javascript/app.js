@@ -1,19 +1,19 @@
 var speakers = [
 	{
-		"name": "Allen Iverson, Basketball",
-		"quote": "This guy gets it."
+		"name": "-Allen Iverson, Basketball",
+		"quote": '"This guy gets it."'
 	}, {
-		"name": "Bono, U2",
-		"quote": "A real class act, and an inspiration."
+		"name": "-John Claybrook, Operations Manager",
+		"quote": '"Prentice is a natural leader and quality teacher. A phenomenal hire for anyone."'
 	}, {
-		"name": "John Claybrook, Operations Manager",
-		"quote": "Prentice is a natural leader and quality teacher. A phenomenal hire for anyone."
+		"name": "-Lokesh Anand, Back-End Developer",
+		"quote": '"He has an eye for detail. His persistence and problem solving skills make him a dependable team member."'
 	}, {
-		"name": "Charles Erdmann, Production Manager",
-		"quote": "PM is really dependable. He will always get the job done."
-	}, {
-		"name": "Lokesh Anand, Back-End Developer",
-		"quote": "He has an eye for detail. His persistence and problem solving skills make him a dependable team member."
+		"name": "-Bono, U2",
+		"quote": '"A real class act, and an inspiration."'
+	},  {
+		"name": "-Charles Erdmann, Production Manager",
+		"quote": '"PM is really dependable. He will always get the job done."'
 	}
 ]
 
