@@ -97,6 +97,7 @@ break {
 	align-items: center;
 	list-style-type: square;
 	font-size: 1.5em;
+	z-index: 500;
 }
 
 .headshot {
@@ -122,7 +123,7 @@ break {
 	margin-left: -50px;
 	padding: 20px;
 	border: none; 
-	z-index: 500;
+	z-index: 501;
 	font-size: 1.2em;
 }
 
@@ -184,6 +185,10 @@ nav a {
 	width: 75px;
 }
 
+.active {
+	background: linear-gradient(to top, rgba(255,255,255,.2), transparent);
+}
+
 nav .svg-inline--fa {
 	vertical-align: middle;
 	margin-bottom: 0;
@@ -193,6 +198,7 @@ nav .svg-inline--fa {
 
 /*===============main content===============*/
 .mainContent {
+	opacity: 0;
 	display: flex;
 	justify-content: flex-start;
 	height: 100vh;
@@ -256,6 +262,9 @@ nav .svg-inline--fa {
     padding: 20px;
     width: 80%;
     max-width: 1200px;
+    height: 85%;
+    min-height: 204px;
+    max-height: 270px; 
 }
 
 .contactTitle ul {
@@ -290,16 +299,16 @@ nav .svg-inline--fa {
 }
 
 .quote {
-	width: 40%;
+	width: 90%;
 	text-align: center;
 	margin-bottom: 5px;
-	line-height: 2em;
+	line-height: 1.3em;
 }
 
 .speaker {
 	line-height: 2em;
 	position: relative;
-	left: 50px;
+	left: 70px;
 	font-style: italic;
 }
 
@@ -366,7 +375,7 @@ nav .svg-inline--fa{
 .birds, .clouds, .mountains, .trees, .cloudsright, .mountainsleft {
 	background-repeat: no-repeat;
 	overflow-x: visible;
-	background-color: rgba(255,255,255,.6);
+	background-color: rgba(255,255,255,.4);
 }
 
 .birds {
