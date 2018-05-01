@@ -13,7 +13,7 @@ var speakers = [
 		"quote": '"A real class act, and an inspiration."'
 	},  {
 		"name": "-Charles Erdmann, Production Manager",
-		"quote": '"PM is really dependable. He will always get the job done."'
+		"quote": '"PM acquires expertise in new subjects quickly, and is always looking to add more practical skills. He never settles, and takes the extra measure that ensures quality work. He also has a great sense of humor that keeps morale up."'
 	}
 ]
 
@@ -22,8 +22,8 @@ var curInd = 0;
 var quoteLoop = function () {
 	$(".quote").animate({opacity: "0"}, 500);
 	$(".speaker").animate({opacity: "0"}, 500, function(){
-		$(".quote").text(speakers[curInd].quote);
 		$(".speaker").text(speakers[curInd].name)
+		$(".quote").text(speakers[curInd].quote);
 	});
 	$(".quote").animate({opacity: "1"}, 500);
 	$(".speaker").animate({opacity: "1"}, 500);
