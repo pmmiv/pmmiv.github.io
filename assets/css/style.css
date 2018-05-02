@@ -423,12 +423,13 @@ nav .svg-inline--fa{
 .screenshot {
 	width: 80%;
 	margin-bottom: 10px;
-	filter: grayscale(75%);
+	filter: grayscale(80%);
 	cursor: pointer;
 }
 
 .screenshot:hover {
 	filter: grayscale(0%);
+	transition: filter .5s ease-out;
 }
 /*===============end main content===============*/
 
