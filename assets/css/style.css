@@ -187,7 +187,7 @@ nav {
 	        align-items: center;
 	width: 100vw;
 	height: 50px;
-	padding: 0 7%;
+	padding: 0 50px;
 }
 
 nav a {
@@ -214,11 +214,9 @@ nav a {
 }
 
 .navleft {
+	min-width: 360px;
 	width: 30%;
-}
-
-.navright {
-	width: 20%;
+	max-width: 500px;
 }
 
 .navItem:hover, .navContact:hover {
@@ -271,20 +269,24 @@ nav .svg-inline--fa {
 
 .rl, .lr {
 	color: #212121;
-	padding: 20px 10%;
 	width: 100vw;
 	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .disciplinesDiv, .worksDiv {
-	display: -webkit-box;
-	display: -ms-flexbox;
+	max-width: 1500px;
+	width: 100%;
+	margin: 0 20px;
 	display: flex;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
+	    justify-content: space-between;
 	        align-items: center;
+}
+
+.even {
+	justify-content: space-evenly;
 }
 
 .aboutDiv {
@@ -297,25 +299,6 @@ nav .svg-inline--fa {
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	padding: 50px 7% 0 7%;
-}
-
-.contactDiv {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	padding: 5% 0 2% 0;
-	font-size: 1.3em;
 }
 
 .contactTitle p {
@@ -327,6 +310,7 @@ nav .svg-inline--fa {
 }
 
 .contactTitle {
+	font-size: 1.3em;
 	text-align: center;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -343,6 +327,7 @@ nav .svg-inline--fa {
 	        justify-content: flex-start;
     padding: 25px;
     width: 80%;
+    min-width: 1040px;
     max-width: 1200px;
     height: 85%;
     min-height: 204px;
@@ -373,6 +358,7 @@ nav .svg-inline--fa {
 }
 
 .quoteList {
+	font-size: 1.3em;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -389,8 +375,7 @@ nav .svg-inline--fa {
     padding: 25px;
     height: 100%;
     max-height: 320px;
-    width: 40%;
-    max-width: 780px;
+    width: 780px;
 
 }
 
@@ -415,14 +400,14 @@ nav .svg-inline--fa {
 	font-size: 1.1em;
 	overflow-y: scroll;
 	max-height: 300px;
-	min-width: 967px;
+	/*min-width: 967px;*/
 	max-width: 1100px;
 	text-indent: 2em;
 }
 
-.summary::-webkit-scrollbar { 
+/*.summary::-webkit-scrollbar { 
     display: none; 
-}
+}*/
 
  
 .disciplineCard, .workCard {
