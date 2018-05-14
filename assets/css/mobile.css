@@ -15,6 +15,8 @@
 		background-color: #e74c3c;
 		animation: bg-color 50s infinite;
 		-webkit-animation: bg-color 50s infinite;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
 	}
 
 	body::-webkit-scrollbar { 
@@ -98,9 +100,11 @@
 		-webkit-box-shadow: inset 0 0 150px 0 rgba(0,0,0,.2);
 		        box-shadow: inset 0 0 150px 0 rgba(0,0,0,.2);
 		position: fixed;
-		flex-direction: column;
-		margin-top: -205px;
-		top: 50%;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		top: 30px;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -147,7 +151,9 @@
 		-webkit-box-pack: justify;
 		    -ms-flex-pack: justify;
 		        justify-content: space-between;
-		        align-items: center;
+		        -webkit-box-align: center;
+		            -ms-flex-align: center;
+		                align-items: center;
 		height: 150px;
 		margin-top: 20px;
 	}
@@ -180,7 +186,8 @@
 
 	/*===============nav===============*/
 	nav {
-		animation: bg-color 50s infinite;
+		-webkit-animation: bg-color 50s infinite;
+		        animation: bg-color 50s infinite;
 		-webkit-box-shadow: inset 0 0 50px 0 rgba(0,0,0,.2);
 		        box-shadow: inset 0 0 50px 0 rgba(0,0,0,.2);
 		position: fixed;
@@ -210,29 +217,46 @@
 	}
 
 	.navleft {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
-		align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		width: 100%;
 	}
 
 	.navlist {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 		width: 100%;
-		justify-content: space-around;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
 	}
 
 	.navright {
 		position: fixed;
 		bottom: 0;
 		width: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		height: 50px;
 		-webkit-box-shadow: inset 0 0 50px 0 rgba(0,0,0,.2);
 		        box-shadow: inset 0 0 50px 0 rgba(0,0,0,.2);
-		animation: bg-color 50s infinite;
+		-webkit-animation: bg-color 50s infinite;
+		        animation: bg-color 50s infinite;
 	}
 
 	.navItem:hover, .navContact:hover {
@@ -271,8 +295,12 @@
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
-		align-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-ms-flex-line-pack: center;
+		    align-content: center;
 		height: 100vh;
 		width: 100vw;
 	}
@@ -287,31 +315,53 @@
 		color: #212121;
 		width: 100vw;
 		height: 50%;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}
 
 	.disciplinesDiv, .worksDiv {
 		max-width: 1500px;
 		width: 100%;
 		margin: 0 20px;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		    justify-content: space-between;
-		        align-items: center;
-		flex-direction: column;
+		    -webkit-box-pack: justify;
+		        -ms-flex-pack: justify;
+		            justify-content: space-between;
+		        -webkit-box-align: center;
+		            -ms-flex-align: center;
+		                align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.even {
-		justify-content: space-evenly;
+		-webkit-box-pack: space-evenly;
+		    -ms-flex-pack: space-evenly;
+		        justify-content: space-evenly;
 	}
 
 	.aboutDiv {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
-		align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		-webkit-box-pack: center;
 		    -ms-flex-pack: center;
 		        justify-content: center;
@@ -545,6 +595,4 @@
 		transition: filter .5s ease-out, -webkit-filter .5s ease-out;
 	}
 	/*===============end main content===============*/
-
-
 }
