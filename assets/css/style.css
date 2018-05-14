@@ -479,40 +479,40 @@
 
 	.birds {
 		background-image: url("../images/birds.svg");
-		background-position: 120% 0;
-		background-size: 40%;
+		background-position: 100% 0;
+		background-size: 600px;
 	}
 
 	.clouds, .cloudsright {
-		background-size: 40%;
+		background-size: 400px;
 	}
 	.clouds {
-		background-image: url("../images/clouds.svg");
-		background-position: -30% 0%;
+		background-image: url("../images/cloudsRight.svg");
+		background-position: 0% -20px;
 	}
 
 	.cloudsright {
-		background-image: url("../images/clouds.svg");
-		background-position: 130% 0%;
+		background-image: url("../images/cloudsLeft.svg");
+		background-position: 100% -20px;
 	}
 
 	.mountains, .mountainsleft {
-		background-size: 50%;
+		background-size: 500px;
 	}
 
 	.mountains {
-		background-image: url("../images/mountains.svg");
-		background-position: 150% 75%;
+		background-image: url("../images/mountainsLeft.svg");
+		background-position: 100% 130px;
 	}
 
 	.mountainsleft {
-		background-image: url("../images/mountains.svg");
-		background-position: -50% 75%;
+		background-image: url("../images/mountainsRight.svg");
+		background-position: 0% 130px;
 	}
 
 	.trees {
-		background-position: -3% 100%;
-		background-size: 24%;
+		background-position: -28px 28px;
+		background-size: 450px;
 		background-image: url("../images/trees.svg");
 	}
 
