@@ -9,12 +9,16 @@
 		height: 100%;
 		overflow-x: hidden;
 		font-family: 'Montserrat', sans-serif;
-		font-size: 15px;
+		font-size: 13px;
 	    color: white;
 		scroll-behavior: smooth;
 		background-color: #e74c3c;
 		animation: bg-color 50s infinite;
 		-webkit-animation: bg-color 50s infinite;
+	}
+
+	body::-webkit-scrollbar { 
+	    display: none; 
 	}
 
 	@-webkit-keyframes bg-color {
@@ -40,9 +44,8 @@
 	}
 
 	h1 {
-		font-size: 3.8em;
+		font-size: 1.5em;
 		font-weight: 700;
-		margin: 10px 0;
 	}
 
 	h2 {
@@ -90,13 +93,13 @@
 		background: -webkit-linear-gradient(left, rgba(0,0,0,.3), transparent);
 		background: -o-linear-gradient(left, rgba(0,0,0,.3), transparent);
 		background: linear-gradient(to right, rgba(0,0,0,.3), transparent);
-		padding: 20px 7%;
+		padding: 20px 0;
 		width: 100vw;
 		-webkit-box-shadow: inset 0 0 150px 0 rgba(0,0,0,.2);
 		        box-shadow: inset 0 0 150px 0 rgba(0,0,0,.2);
 		position: fixed;
 		flex-direction: column;
-		margin-top: -175px;
+		margin-top: -205px;
 		top: 50%;
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -127,8 +130,13 @@
 		margin-top: 35px;
 	}
 
+/*doesn't work for reversing the about page order*/
+/*	#about {
+		display: flex;
+		flex-direction: column-reverse;
+	}*/
+
 	.cover div {
-		margin-left: 20px;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -139,9 +147,9 @@
 		-webkit-box-pack: justify;
 		    -ms-flex-pack: justify;
 		        justify-content: space-between;
-		-webkit-box-align: start;
-		    -ms-flex-align: start;
-		        align-items: flex-start;
+		        align-items: center;
+		height: 150px;
+		margin-top: 20px;
 	}
 
 	.enterSite {
@@ -187,9 +195,8 @@
 		    -ms-flex-align: center;
 		        align-items: center;
 		width: 100vw;
-		height: 50px;
-		padding: 0 50px;
 		z-index: 500;
+		padding-top: 10px;
 	}
 
 	nav a {
@@ -202,23 +209,30 @@
 		padding: 0 10px;
 	}
 
-	.navleft, .navright {
-		display: -webkit-box;
-		display: -ms-flexbox;
+	.navleft {
 		display: flex;
-		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
-		height: 100%;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
 	}
 
-	.navleft {
-		min-width: 360px;
-		width: 30%;
-		max-width: 500px;
+	.navlist {
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+	}
+
+	.navright {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 50px;
+		-webkit-box-shadow: inset 0 0 50px 0 rgba(0,0,0,.2);
+		        box-shadow: inset 0 0 50px 0 rgba(0,0,0,.2);
+		animation: bg-color 50s infinite;
 	}
 
 	.navItem:hover, .navContact:hover {
@@ -264,7 +278,8 @@
 	}
 
 	.page {
-		margin-top: 50px;
+		margin-top: 75px;
+		margin-bottom: -25px;
 		width: 100vw;
 	}
 
@@ -339,12 +354,13 @@
 	}
 
 	.contactList {
-		width: 70%;
+		display: none;
+/*		width: 70%;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
 		-ms-flex-pack: distribute;
-		    justify-content: space-around;
+		    justify-content: space-around;*/
 	}
 
 	.contactList li {
@@ -458,50 +474,48 @@
 	}
 
 
-	.birds, .clouds, .mountains, .trees, .cloudsright, .mountainsleft {
+	.mountains, .trees, .cloudsright, .mountainsleft {
 		background-repeat: no-repeat;
 		overflow-x: visible;
-		background-color: rgba(255,255,255,.3);
+		background-position: 50% 100%;
 	}
 
-	.birds {
+	/*birds*/
+	.mountainsleft {
 		background-image: url("../images/birds.svg");
-		background-position: 120% 0;
-		background-size: 40%;
-	}
-
-	.clouds, .cloudsright {
-		background-size: 40%;
-	}
-	.clouds {
-		background-image: url("../images/clouds.svg");
-		background-position: -30% 0%;
+		background-size: 240px;
+		padding-bottom: 170px;
+		margin-bottom: 25px;
 	}
 
 	.cloudsright {
 		background-image: url("../images/clouds.svg");
-		background-position: 130% 0%;
-	}
-
-	.mountains, .mountainsleft {
-		background-size: 50%;
+		padding-bottom: 170px;
+		background-size: 240px;
 	}
 
 	.mountains {
 		background-image: url("../images/mountains.svg");
-		background-position: 150% 75%;
+		padding-bottom: 176px;
+		background-size: 350px;
 	}
 
-	.mountainsleft {
-		background-image: url("../images/mountains.svg");
-		background-position: -50% 75%;
+	/*below mountains */
+	.birds {
+		margin-top: -45px;
 	}
 
 	.trees {
-		background-position: -3% 100%;
-		background-size: 24%;
 		background-image: url("../images/trees.svg");
+		padding-bottom: 234px;
+		background-size: 220px;
 	}
+
+	/*below trees*/
+	.clouds {
+		margin-top: -52px;
+	}
+
 
 	.workCard a{
 		width: 100%;

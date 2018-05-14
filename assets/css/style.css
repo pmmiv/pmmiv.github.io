@@ -43,7 +43,6 @@
 	h1 {
 		font-size: 3.8em;
 		font-weight: 700;
-		margin: 10px 0;
 	}
 
 	h2 {
@@ -125,6 +124,7 @@
 	}
 
 	.cover div {
+		height: 200px;
 		margin-left: 20px;
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -215,9 +215,19 @@
 	}
 
 	.navleft {
-		min-width: 360px;
+		min-width: 415px;
 		width: 30%;
-		max-width: 500px;
+		max-width: 550px;
+	}
+
+	.brand {
+		margin-right: 50px;
+	}
+
+	.navlist {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
 	}
 
 	.navItem:hover, .navContact:hover {
@@ -405,9 +415,9 @@
 		text-indent: 2em;
 	}
 
-	/*.summary::-webkit-scrollbar { 
+	.summary::-webkit-scrollbar { 
 	    display: none; 
-	}*/
+	}
 
 	 
 	.disciplineCard, .workCard {
