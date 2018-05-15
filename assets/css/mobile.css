@@ -104,7 +104,7 @@
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
 		        flex-direction: column;
-		top: 30px;
+		top: 50px;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -160,7 +160,7 @@
 
 	.enterSite {
 		position: fixed;
-		bottom: 30px;
+		bottom: 50px;
 		left: 50%;
 		background-color: rgba(0,0,0,.2);
 		width: 100px;
