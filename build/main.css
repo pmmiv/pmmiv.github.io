@@ -1,0 +1,60 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: white;
+  scroll-behavior: smooth;
+  background-color: #e74c3c;
+  animation: bg-color 50s infinite;
+  -webkit-animation: bg-color 50s infinite;
+}
+body .snarf {
+  background-color: green;
+}
+
+@-webkit-keyframes bg-color {
+  0% {
+    background-color: #394736;
+  }
+  20% {
+    background-color: #B99555;
+  }
+  40% {
+    background-color: #A8462D;
+  }
+  60% {
+    background-color: #5C584C;
+  }
+  80% {
+    background-color: #4C68CC;
+  }
+  100% {
+    background-color: #394736;
+  }
+}
+@keyframes bg-color {
+  0% {
+    background-color: #394736;
+  }
+  20% {
+    background-color: #B99555;
+  }
+  40% {
+    background-color: #A8462D;
+  }
+  60% {
+    background-color: #5C584C;
+  }
+  80% {
+    background-color: #4C68CC;
+  }
+  100% {
+    background-color: #394736;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

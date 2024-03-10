@@ -1,0 +1,27 @@
+{
+  "name": "pmmiv-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:js": "uglifyjs source/main.js -c -m -o build/main.min.js",
+    "build:css": "sass source/styles.scss build/main.css",
+    "build": "npm run build:js && npm run build:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmmiv/pmmiv.github.io.git"
+  },
+  "author": "@pmmiv",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/pmmiv/pmmiv.github.io/issues"
+  },
+  "homepage": "https://github.com/pmmiv/pmmiv.github.io#readme",
+  "dependencies": {
+    "eslint": "^8.57.0",
+    "minify": "^11.1.1",
+    "sass": "^1.71.1",
+    "uglify-js": "^3.17.4"
+  }
+}
